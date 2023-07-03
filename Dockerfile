@@ -14,7 +14,7 @@ RUN git clone https://github.com/pipe-r-v/calculadora.git .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expone el puerto 5000 para acceder a la aplicación
-EXPOSE 5000
+EXPOSE 8080
 
 # Define el comando de inicio de la aplicación
 CMD ["python", "app.py"]
