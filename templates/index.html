@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form action="/" method="POST">
+        <input type="text" name="num1" placeholder="Número 1" required>
+        <input type="text" name="num2" placeholder="Número 2" required>
+        <button type="submit" name="operation" value="add">Sumar</button>
+        <button type="submit" name="operation" value="subtract">Restar</button>
+        <button type="submit" name="operation" value="multiply">Multiplicar</button>
+        <button type="submit" name="operation" value="divide">Dividir</button>
+    </form>
+    {% if result %}
+        <h2>Resultado: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
